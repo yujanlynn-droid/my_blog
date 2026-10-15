@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>新增文章</title>
+</head>
+<body>
+    <h1>新增文章</h1>
+
+    <form method="POST">
+        <label>文章標題：</label>
+        <input type="text" name="title" required>
+
+        <br><br>
+
+        <label>作者：</label>
+        <input type="text" name="author" required>
+
+        <br><br>
+
+        <label>文章內容：</label>
+        <br>
+        <textarea name="content" rows="10" cols="50" required></textarea>
+
+        <br><br>
+
+        <button type="submit">發布文章</button>
+    </form>
+
+    <br>
+
+    <a href="{{ url_for('index') }}">返回首頁</a>
+</body>
+</html>
